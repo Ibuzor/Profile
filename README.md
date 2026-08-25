@@ -40,7 +40,7 @@ Welcome to my GitHub portfolio! I am currently expanding my expertise in advance
 ---
 
 ## 📫 Let's Connect!
-* 💼 **LinkedIn:** [linkedin.com/in/your-username](https://linkedin.com/in/ibuzor)
+* 💼 **LinkedIn:** (https://linkedin.com/in/ibuzor)
 * 📧 **Email:** [ibuzor@gmail.com](mailto:ibuzor@gmail.com)
 
 
