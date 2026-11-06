@@ -1,49 +1,32 @@
-# Hi, I'm Ibuzor 
+# Ibuzor
 
-I recently completed the MIT Professional Education Applied AI and Data Science Program and am now studying software development with an AI focus at NBI Handelsakademin. My work so far is in classification modeling for regulated settings, where a prediction has to come with a reason a person can read and defend.
+Software developer student in Halmstad, Sweden. I spent several years in IT project delivery, finished MIT Professional Education's Applied AI and Data Science programme, and I'm now in the second half of my first year at NBI Handelsakademin, training as a software developer (AI). I'm learning to build and ship the things I used to plan.
 
-## Featured project
+[LinkedIn](https://www.linkedin.com/in/ibuzor)
 
-### Home Equity Loan Default Prediction
+## How I got here
 
-A classification model that predicts default on home equity loans, built for a bank that has to justify every rejection under the Equal Credit Opportunity Act (ECOA). This was my capstone for the MIT program.
+- **IT Project Management (YH diploma, 300 credits).** PSM I certified. Scrum Master and project manager at Resource Point AB in Gothenburg, where I led a team of 14.
+- **MIT Professional Education, Applied AI and Data Science.** The capstone, a loan default model, scored 94/100.
+- **NBI Handelsakademin, Software Developer (AI).** Two-year YH programme, now in year 1. So far: C# and .NET, object-oriented design, JSON and file handling, SQL on MySQL, Docker, Git.
 
-- **Data:** the HMEQ dataset, 5,960 loan records with about a 20% default rate.
-- **Models compared:** logistic regression as a baseline, a decision tree, a random forest, an Explainable Boosting Machine, and XGBoost with monotonic constraints on key features so its behavior can be defended to a regulator.
-- **Metric choice:** I judged models on recall, precision, F1 and ROC-AUC instead of accuracy. Approving a borrower who later defaults costs the bank more than rejecting a reliable one, so missed defaulters were weighted more heavily.
-- **Missing data:** missing values in DEBTINC and VALUE were strongly linked to default, so I kept binary missingness indicators as features instead of imputing them away.
-- **Explanations:** SHAP values give feature-level reasons for each prediction. A retrieval-based generator then drafts adverse action notices from those values, using the reason codes in Regulation B (12 CFR Part 1002, Appendix C).
-- **Result:** XGBoost with monotonic constraints was my recommended model, chosen for its recall under the cost asymmetry above.
-- **Grade:** 94/100 overall (milestone 20/20, final submission 40/40, live presentation 34/40).
+## What I use
 
-**Tools:** Python, pandas, scikit-learn, XGBoost, SHAP, sentence-transformers, Anthropic API
+- Python: pandas, scikit-learn, statsmodels, XGBoost, SHAP
+- C# and .NET
+- SQL (MySQL), Docker, Git
+- Scrum and Trello from my project work
 
-[View repository](https://github.com/Ibuzor/Loan-Default-Prediction)
+## Projects
 
-## Technical toolbox
+**[Loan-Default-Prediction](https://github.com/Ibuzor/Loan-Default-Prediction)**: my MIT capstone. It classifies loan applicants by default risk using XGBoost with monotonic constraints, explains each decision with SHAP, and uses retrieval-augmented generation to draft adverse-action notices in line with ECOA.
 
-| Category | Technologies |
-| --- | --- |
-| Languages | Python (pandas, NumPy, scikit-learn) |
-| Modeling and interpretation | XGBoost, Random Forest, SHAP, class-imbalance handling, threshold tuning |
-| Text and LLM work | sentence-transformers, retrieval-based generation, Anthropic API |
-| Visualization | Matplotlib, Seaborn |
-| Tools | Git, GitHub, Google Colab, Jupyter Notebooks |
+**[boston-housing-regression](https://github.com/Ibuzor/boston-housing-regression)**: an ordinary least squares model of Boston house prices on a log-transformed target. It covers VIF-based feature selection, assumption tests and cross-validation (test R² 0.80).
 
-## Projects I plan to build
+**[C# coursework](https://github.com/Ibuzor?tab=repositories&language=c%23)**: console programs from NBI on error handling, dictionaries, file and JSON handling, and class design.
 
-I haven't started these yet.
+## Next
 
-- **Customer churn prediction.** A pipeline on historical customer behavior data to find high-risk segments, likely using random forests and XGBoost.
-- **Retail image classification.** A convolutional neural network to sort product images into inventory categories, with data augmentation and transfer learning.
+I plan to export the loan model to ONNX and score applicants from a .NET app, with unit tests, a GitHub Actions build, a Docker setup and a MySQL table that logs predictions. I want practice with the parts around a model: testing, versioning, deployment and monitoring.
 
-## Education
-
-- Software Developer with an AI specialization, NBI Handelsakademin
-- Applied AI and Data Science Program, MIT Professional Education
-- IT Project Management, IT Högskolan
-
-## Contact
-
-- LinkedIn: [linkedin.com/in/ibuzor](https://linkedin.com/in/ibuzor)
-- Email: [ibuzor@gmail.com](mailto:ibuzor@gmail.com)
+I'm looking for a LIA placement or internship in software or AI development. LinkedIn is the best way to reach me.
