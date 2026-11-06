@@ -2,7 +2,7 @@
 
 Software developer student in Halmstad, Sweden. I spent several years in IT project delivery, finished MIT Professional Education's Applied AI and Data Science programme, and I'm now in the second half of my first year at NBI Handelsakademin, training as a software developer (AI). I'm learning to build and ship the things I used to plan.
 
-[LinkedIn](https://www.linkedin.com/in/ibuzor)
+[Link Up!](https://www.linkedin.com/in/ibuzor)
 
 ## How I got here
 
